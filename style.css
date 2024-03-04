@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     background-color: black;
+    
 }
 
 .nav{
@@ -147,5 +148,295 @@
     width: 680px;
     margin-left: 100px;
     margin-bottom: 100px;
+    filter: brightness(60%);
 }
 
+
+/*About Me*/
+.about {
+    padding: 6rem 0;
+  }
+
+  .aboutheading h1{
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  .about-content img {
+    margin-bottom: 50px;
+    height: 200px;
+    width: 200px;
+  }
+  .about-content p {
+    font-size: 1.2rem;
+    color: #f0f0e6;
+    padding: 0 2.3rem;
+    text-align: center;
+  }
+  .skills .skills-heading {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #25b79f;
+    text-align: center;
+  }
+  .about-me .about-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .about-content .left-content {
+    flex-basis: 45%;
+    text-align: center;
+  }
+  .about-content .right-content {
+    flex-basis: 45%;
+  }
+
+  .work-arrow a{
+    text-decoration: none;
+    color: orange;
+  }
+
+
+  /*Skill Bar*/
+  .skills-bar {
+    padding: 25px 30px;
+  }
+  .skills-bar .bar {
+    margin: 25px 0;
+  }
+  .skills-bar .bar .info span {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .skills-bar .bar .info {
+    margin-bottom: 8px;
+    color: #f0f0e6;
+  }
+  .skills-bar .bar .progress-line {
+    position: relative;
+    height: 10px;
+    width: 550px;
+    background: #f0f0f0;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  }
+  .bar .progress-line span {
+    position: absolute;
+    background: orange;
+    height: 100%;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  }
+  @keyframes animate {
+    100% {
+      transform: scaleX(1);
+    }
+  }
+  .progress-line .html {
+    width: 80%;
+  }
+  .progress-line .css {
+    width: 70%;
+  }
+  .progress-line .bootstrap {
+    width: 50%;
+  }
+  .progress-line .javascript {
+    width: 30%;
+  }
+  .progress-line .c {
+    width: 60%;
+  }
+  .bar .progress-line span::before {
+    position: absolute;
+    content: "";
+    height: 0;
+    right: 0;
+    top: -12px;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-style: #f0f0f0;
+    border-top-color: #f0f0f0;
+  }
+  .bar .progress-line span::after {
+    position: absolute;
+    right: 0;
+    top: -28px;
+    color: orange;
+    font-size: 12px;
+    font-weight: 700;
+    background: #f0f0f0;
+    padding: 1px 8px;
+    border-radius: 3px;
+  }
+  .progress-line .html::after {
+    content: "80%";
+  }
+  .progress-line .css::after {
+    content: "70%";
+  }
+  .progress-line .bootstrap::after {
+    content: "50%";
+  }
+  .progress-line .javascript::after {
+    content: "30%";
+  }
+  .progress-line .c::after {
+    content: "60%";
+  }
+
+  #Project {
+    justify-content: space-evenly;
+    border: 2px solid white;
+  }
+
+  #Project h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    color: white;
+    font-weight: 800;
+  }
+
+  #Project span{
+    color: orange;
+  }
+
+  .menu img{
+    height: 400px;
+    width: auto;
+    border-radius: 40%;
+    filter: blur(2px);
+  }
+
+  .amazon img{
+    height: 380px;
+    width: auto;
+    border-radius: 40%;
+    margin-left: 50px;
+    filter: blur(2px);
+  }
+
+  .amazon p{
+    display: flex;
+    margin-left: 1000px;
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 700;
+    margin-top: 80px;
+  }
+
+  .amazon span{
+    color: orange;
+  }
+
+  .pbut1 button{
+    display: flex;
+    margin-left: 1000px;
+    color: black;
+    background-color: orange;
+    height: 40px;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 2px solid orange;
+  }
+
+  .pbut1 button:hover:nth-child(1){
+        color: orange;
+        background: transparent;
+  }
+
+  .pbut1 button:hover:nth-child(2){
+    color: white;
+    background: transparent;
+  }
+
+  .pbut2 button{
+    display: flex;
+    margin-left: 1000px;
+    color: black;
+    background-color: orange;
+    height: 40px;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 2px solid orange;
+    margin-left: 1200px;
+  }
+
+  .pbut2 button:hover:nth-child(1){
+        color: orange;
+        background: transparent;
+  }
+
+  .pbut2 button:hover:nth-child(2){
+    color: white;
+    background: transparent;
+  }
+
+  .pbut3 button{
+    display: flex;
+    margin-left: 1000px;
+    color: black;
+    background-color: orange;
+    height: 40px;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 2px solid orange;
+  }
+
+  .pbut3 button:hover:nth-child(1){
+        color: orange;
+        background: transparent;
+  }
+
+  .pbut3 button:hover:nth-child(2){
+    color: white;
+    background: transparent;
+  }
+
+  .pbut4 button{
+    display: flex;
+    margin-left: 1000px;
+    color: black;
+    background-color: orange;
+    height: 40px;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 2px solid orange;
+    margin-left: 1200px;
+  }
+
+  .pbut4 button:hover:nth-child(1){
+        color: orange;
+        background: transparent;
+  }
+
+  .pbut4 button:hover:nth-child(2){
+    color: white;
+    background: transparent;
+  }
+
+
+  .menu p{
+    display: flex;
+    margin-left: 1000px;
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 700;
+    margin-top: 70px;
+  }
