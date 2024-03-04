@@ -238,7 +238,7 @@
     }
   }
   .progress-line .html {
-    width: 80%;
+    width: 100%;
   }
   .progress-line .css {
     width: 70%;
@@ -277,7 +277,7 @@
     border-radius: 3px;
   }
   .progress-line .html::after {
-    content: "80%";
+    content: "100%";
   }
   .progress-line .css::after {
     content: "70%";
@@ -309,11 +309,24 @@
     color: orange;
   }
 
+  .amazon {
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+    width: 1350px;
+  }
+
   .menu img{
     height: 400px;
     width: auto;
     border-radius: 40%;
     filter: blur(2px);
+  }
+
+  .amazon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1350px;
   }
 
   .amazon img{
@@ -337,17 +350,33 @@
     color: orange;
   }
 
-  .pbut1 button{
+  .pbut1{
     display: flex;
-    margin-left: 1000px;
-    color: black;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 300px;
+    gap: 70px;
+
+  }
+
+   .pbut1 button {
     background-color: orange;
-    height: 40px;
-    width: 150px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
+    border-radius: 20px;
+    height: 70px;
+    width: 250px;
     border: 2px solid orange;
+
+   }
+  .pbut1 a {
+    margin:20px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 800;
+    background-color: transparent;
+    color: black;
   }
 
   .pbut1 button:hover:nth-child(1){
@@ -357,21 +386,65 @@
 
   .pbut1 button:hover:nth-child(2){
     color: white;
-    background: transparent;
+    /* background: transparent; */
   }
 
-  .pbut2 button{
+  
+  .menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1350px;
+  }
+
+  .menu img{
+    height: 380px;
+    width: auto;
+    border-radius: 40%;
+    margin-left: 50px;
+    filter: blur(2px);
+  }
+
+  .menu p{
     display: flex;
     margin-left: 1000px;
-    color: black;
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 700;
+    margin-top: 80px;
+  }
+
+  .menu span{
+    color: orange;
+  }
+
+  .pbut2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 300px;
+    gap: 70px;
+
+  }
+
+   .pbut2 button {
     background-color: orange;
-    height: 40px;
-    width: 150px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
+    border-radius: 20px;
+    height: 70px;
+    width: 250px;
     border: 2px solid orange;
-    margin-left: 1200px;
+
+   }
+  .pbut2 a {
+    margin:20px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 800;
+    background-color: transparent;
+    color: black;
   }
 
   .pbut2 button:hover:nth-child(1){
@@ -381,56 +454,8 @@
 
   .pbut2 button:hover:nth-child(2){
     color: white;
-    background: transparent;
+    /* background: transparent; */
   }
-
-  .pbut3 button{
-    display: flex;
-    margin-left: 1000px;
-    color: black;
-    background-color: orange;
-    height: 40px;
-    width: 150px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    border: 2px solid orange;
-  }
-
-  .pbut3 button:hover:nth-child(1){
-        color: orange;
-        background: transparent;
-  }
-
-  .pbut3 button:hover:nth-child(2){
-    color: white;
-    background: transparent;
-  }
-
-  .pbut4 button{
-    display: flex;
-    margin-left: 1000px;
-    color: black;
-    background-color: orange;
-    height: 40px;
-    width: 150px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    border: 2px solid orange;
-    margin-left: 1200px;
-  }
-
-  .pbut4 button:hover:nth-child(1){
-        color: orange;
-        background: transparent;
-  }
-
-  .pbut4 button:hover:nth-child(2){
-    color: white;
-    background: transparent;
-  }
-
 
   .menu p{
     display: flex;
